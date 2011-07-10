@@ -1,5 +1,4 @@
 # Get ready to kick ass.
-require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'

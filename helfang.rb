@@ -1,7 +1,7 @@
 # Get ready to kick ass.
 require 'rubygems'
 require 'sinatra'
-require 'Haml'
+require 'haml'
 require 'sass'
 
 get '/' do

@@ -1,4 +1,141 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
-	color: grey;
-	background-color: black;
+	padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	color: #4f4f4f;
+}
+
+p {
+	color: #4f4f4f;
+	font-size: 14px;
+	line-height: 22px;	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+.top {
+	margin-bottom: 60px;
+	div {
+		width: 130px;
+		border-top: 15px solid #482e28;
+		&:first-child {
+			width: 160px;
+		}
+	}
+}
+
+.side {
+	font-family: 'NeoRetroFill';
+	font-size: 18px;
+	 text-align: center;
+	.logo {
+		margin-bottom: 30px;
+	}
+	ul {
+		margin-left: 0;
+		li {	
+			list-style-type: none;
+			margin-bottom: 9px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #d5d5d5;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				color: #4f4f4f;
+				&:hover {
+					color: #d4613f;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.main {
+	h2 {
+		color: #4f4f4f;
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 40px;
+	}
+	h3 {
+		font-size: 28px;	
+	}
+	h4 {
+		color: #292929;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.row {
+		margin-bottom: 30px;
+	}
+	.calendar {
+		.span2 {
+			background-color: #398fc0;
+			height: 90px;
+			width: 130px;
+			padding: 30px 0;
+			font-size: 30px;
+			color: #FFF;
+			text-shadow: 0 -1px 0 #1d4861;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			span {
+				display: block;
+				font-size: 79px;
+				font-weight: 700;
+				margin-top: 35px;
+			}
+			&:first-child {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 9px;
+				letter-spacing: 1px;
+				text-shadow: 0 -1px 0 #743523;
+				background: #d4613f url(/images/bg.calendar.red.jpg) no-repeat bottom left;
+				span {
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+	.sponsors {
+		margin-top: 20px;
+		div {
+			height: 150px;
+			background-color: #398fc0;
+		}
+		.row {
+			background: none;
+			margin-bottom: 20px;
+		}
+		.span2 {
+			width: 130px;
+		}
+	}
+	.faqs {
+		ol {
+			margin-left: 0;
+		}
+	}
+}
+
+@font-face {
+    font-family: 'NeoRetroFill';
+    src: url('/fonts/NEORF___-webfont.eot');
+    src: url('/fonts/NEORF___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NEORF___-webfont.woff') format('woff'),
+         url('/fonts/NEORF___-webfont.ttf') format('truetype'),
+         url('/fonts/NEORF___-webfont.svg#NeoRetroFillRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

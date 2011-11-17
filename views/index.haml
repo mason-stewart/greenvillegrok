@@ -8,119 +8,118 @@
     / Le HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
     / Le styles
+    %link{:href => "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css", :rel => "stylesheet"}
     :css
       body {
         padding-top: 60px;
       }
     %link{:rel => "stylesheet", :href => "stylesheets/style.css", :media => "all"}
-
+    %script{:src => "http://use.typekit.com/ovd0ryf.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
     / Le fav and touch icons
     %link{:href => "images/favicon.ico", :rel => "shortcut icon"}
     %link{:href => "images/apple-touch-icon.png", :rel => "apple-touch-icon"}
     %link{:href => "images/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
     %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
   %body
-    .container-fluid
-      .sidebar
-        .well
-          %h5 Sidebar
+    .container
+      .row.top
+        .span3
+        .span3.offset1
+        .span3
+        .span3
+        .span3
+      .row
+        .span3.side
+          %img.logo{:src=>'/images/logo.png', :width=>'160', :height=>'95'}
           %ul
             %li
-              %a{:href => "#"} Link
+              %a{:href => "#"} Location
             %li
-              %a{:href => "#"} Link
+              %a{:href => "#"} Tickets
             %li
-              %a{:href => "#"} Link
+              %a{:href => "#"} Sponsors
             %li
-              %a{:href => "#"} Link
-          %h5 Sidebar
-          %ul
+              %a{:href => "#"} Faqs
             %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-          %h5 Sidebar
-          %ul
-            %li
-              %a{:href => "#"} Link
-            %li
-              %a{:href => "#"} Link
-      .content
-        / Main hero unit for a primary marketing message or call to action
-        .hero-unit
-          %h1 Hello, world!
-          %p Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-          %p
-            %a.btn.primary.large Learn more »
-        / Example row of columns
-        .row
-          .span6
-            %h2 Heading
-            %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-            %p
-              %a.btn{:href => "#"} View details »
-          .span5
-            %h2 Heading
-            %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            %p
-              %a.btn{:href => "#"} View details »
-          .span5
-            %h2 Heading
-            %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            %p
-              %a.btn{:href => "#"} View details »
-        %hr
-          / Example row of columns
+              %a{:href => "#"} Say Hello
+          %img.logo{:src=>'/images/logo.dude.jpg', :width=>'100', :height=>'118'}
+
+
+
+        .span10.offset1.main
+          %h2 A small thing, in a great place, with wonderful people, asking a ton of questions and making headway on some decent answers.          
+          .row.calendar.tk-chaparral-pro
+            .span2.first
+              Greenville
+              %span SC
+            .span2
+              Mar
+              %span 14
+            .span2
+              Mar
+              %span 15
+            .span2
+              Mar
+              %span 16
+             
           .row
-            .span6
-              %h2 Heading
-              %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-              %p
-                %a.btn{:href => "#"} View details »
             .span5
-              %h2 Heading
-              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-              %p
-                %a.btn{:href => "#"} View details »
+              %h4 What the fock is Grok?
+              %p Grok has some nerdy definitions, but like any good postmodernists we’ve coopted the term and use it to symbolize our belief that the power of dialogue between peers is a uniquely potent tool to breaking ground on new ideas, new work, and a whole new level of commeraderie in our field.
             .span5
-              %h2 Heading
-              %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              %p
-                %a.btn{:href => "#"} View details »
+              %h4 Grok is 100% free.
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+
+          %h3 Enormous thanks to this year's sponsors of Grok
+          %p Without the good faith of these businesses we wouldn’t be able to keep Grok 100% free and accessible. Please thank them by employing their services or using their products.
+
+          .sponsors
+            .row
+              .span10
+            .row
+              .span5
+              .span5
+            .row
+              .span2
+              .span2
+              .span2
+              .span2
+            .row 
+              .span2
+              .span2
+              .span2
+              .span2
+            
+            %hr
+          
+          .faqs
+            %h3 Frequently Asked Questions
+            %p Without the good faith of these businesses we wouldn’t be able to keep Grok 100% free and accessible. Please thank them by employing their services or using their products.
+
+            %ol.tk-chaparral-pro
+              %li
+                %h4 Some fantastic question. OMG it's an amazing-ass question.
+                %p Some horrible answer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              %li
+                %h4 Some fantastic question. OMG it's an amazing-ass question.
+                %p Some horrible answer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              %li
+                %h4 Some fantastic question. OMG it's an amazing-ass question.
+                %p Some horrible answer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              %li
+                %h4 Some fantastic question. OMG it's an amazing-ass question.
+                %p Some horrible answer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              %li
+                %h4 Some fantastic question. OMG it's an amazing-ass question.
+                %p Some horrible answer Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
           %footer
-            %p © Company 2011!!! 5
-%html
-  %head
-    %title My Sinatra Website
-    %link{:rel => "stylesheet", :href => "stylesheets/style.css", :media => "all"}
-
-  %body
-    #wrapper
-      #header
-        %h1 My Bad Website
-        %h2 A Simple Site made with Sinatra and HAML!
-
-      #content
-        %h1 The Home Page
-        %p
-          Welcome to my website made with Sinatra and HAML.
-        %p
-          This is the home page and this is some text to fill out the home page!
-
-      #side_bar
-        %h1 Side Bar
-        %p
-          This is the side bar of the webpage
-
-      #footer
-        %p
-          This is the footer.
+            %p 
+              © 2011. Loving designed and built by 
+              %a{:href=>'#'}Matthew Smith
+              & 
+              %a{:href=>'#'}Mason Stewart
+              , respectively.

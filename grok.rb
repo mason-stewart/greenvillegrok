@@ -2,7 +2,6 @@
 require 'sinatra'
 require 'haml'
 require 'sass'
-require 'compass'
 
 get '/' do
 	haml :index

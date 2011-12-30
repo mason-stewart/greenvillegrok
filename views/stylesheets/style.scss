@@ -19,7 +19,10 @@ p {
 	line-height: 22px;	
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
-
+.container {
+	width: 880px;
+	padding-left: 60px;
+}
 .top {
 	margin-bottom: 60px;
 	div {
@@ -115,6 +118,21 @@ p {
 		div {
 			height: 150px;
 			background-color: #398fc0;
+			p {
+				padding: 20px;
+				font-size: 18px;
+				color: #FFF;
+				text-align: center;
+				font-weight: bolder;
+			}
+		}
+		.span10 p {
+			font-size: 50px;
+			line-height: 53px;
+		}
+		.span5 p {
+			font-size: 32px;
+			line-height: 36px;
 		}
 		.row {
 			background: none;

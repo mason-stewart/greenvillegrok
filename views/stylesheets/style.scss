@@ -19,6 +19,9 @@ p {
   line-height: 22px;  
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
+hr {
+  padding: 12px 0;
+}
 .container {
   width: 880px;
   padding-left: 60px;
@@ -147,6 +150,7 @@ p {
     }
   }
   .faqs {
+    margin-top: 35px;
     ol {
       margin-left: 0;
     }

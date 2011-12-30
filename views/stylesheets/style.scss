@@ -154,7 +154,7 @@ p {
 }
 
 // mobile layout.
-@media all and (max-width: 960px) {
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     width: 580px;
     padding-left: 30px;

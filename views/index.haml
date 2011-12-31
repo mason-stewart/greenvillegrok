@@ -17,6 +17,8 @@
         padding-top: 60px;
       }
     %link{:rel => "stylesheet", :href => "stylesheets/style.css", :media => "all"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/app.js", :type => "text/javascript"}
     %script{:src => "http://use.typekit.com/ovd0ryf.js", :type => "text/javascript"}
     :javascript
       try{Typekit.load();}catch(e){}
@@ -38,15 +40,15 @@
           %img.logo{:src=>'/images/logo.png', :width=>'160', :height=>'95'}
           %ul
             %li
-              %a{:href => "#"} Location
+              %a{:href => "#location"} Location
             %li
-              %a{:href => "#"} Tickets
+              %a{:href => "#tickets"} Tickets
             %li
-              %a{:href => "#"} Sponsors
+              %a{:href => "#sponsors"} Sponsors
             %li
-              %a{:href => "#"} Faqs
+              %a{:href => "#faqs"} Faqs
             %li
-              %a{:href => "#"} Say Hello
+              %a{:href => "#contact"} Say Hello
           %img.logo{:src=>'/images/logo.dude.jpg', :width=>'100', :height=>'118'}
 
 
@@ -54,7 +56,7 @@
         .span10.offset4.main
           %img.mobile-logo{:src=>'/images/logo.mobile.png', :width=>'575', :height=>'322', :alt=>'Greenville Grok'}
           %h2 A small thing, in a great place, with wonderful people, asking a ton of questions and making headway on some decent answers.          
-          .row.calendar.tk-chaparral-pro
+          .row.calendar.tk-chaparral-pro.jump#location
             .span2.first
               Greenville
               %span SC
@@ -75,9 +77,10 @@
             .span5
               %h4 Grok is 100% free.
               %p And always will be. It's core belief that helps keep this conference small and real. We won't grow into a behemoth conference; it would kill the awesome.
-
-          %h3 We're accepting sponsors for Greenville Grok 2012
-          %p If you're interested in getting your name and business in front of some of the web's best minds we'd love to help you do that. Download the <a href="/grok-sponsorship.pdf">Grok Sponsorship Packet</a> and get in touch.
+          
+          .jump#sponsors
+            %h3 We're accepting sponsors for Greenville Grok 2012
+            %p If you're interested in getting your name and business in front of some of the web's best minds we'd love to help you do that. Download the <a href="/grok-sponsorship.pdf">Grok Sponsorship Packet</a> and get in touch.
 
           / 
             .sponsors
@@ -110,7 +113,7 @@
               
           %hr
           
-          .faqs
+          .faqs.jump#faqs
             %h3 Frequently Asked Questions
             %p We haven't actually been asked any of these questions yet, and we hope these answers will keep it that way.
 
@@ -118,7 +121,7 @@
               %li
                 %h4 How many people are you letting through the gates?
                 %p We'll be letting 100 people into Greenville Grok. We want to keep things small and true. Also, Grok is repeatable. You have no excuse for not doing your own Grok, and if you ask nicely we'll even help you do it.
-              %li
+              %li.jump#tickets
                 %h4 When will tickets be available?
                 %p We should have tickets available on <a href="http://EventBrite.com">Event Brite</a> before mid January.
               %li
@@ -127,7 +130,7 @@
 
           %hr
           
-          .contact
+          .contact.jump#contact
             %h3 Contact someone at Greenville Grok
             %p We are people and unless provoked we rarely bite. The twitters are a good way to get a hold of us. Either via <a href="http://twitter.com/greenvillegrok">@greenvillegrok</a> or <a href="http://twitter.com/cowork">@CoWork</a>. 
 

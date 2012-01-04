@@ -8,6 +8,10 @@ configure do
   Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.config'))
 end
 
+configure :production do
+  require 'newrelic_rpm'
+end
+
 get '/' do
   haml :index
 end

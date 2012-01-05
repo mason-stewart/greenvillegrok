@@ -83,7 +83,15 @@ hr {
     }
   }
 }
-
+.row-fix {
+  position: relative;
+}
+.fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+}
 .main {
   #tickets {
     margin-bottom: 40px;

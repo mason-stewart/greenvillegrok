@@ -27,7 +27,7 @@
     %link{:href => "images/apple-touch-icon.png", :rel => "apple-touch-icon"}
     %link{:href => "images/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
     %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
-  %body
+  %body#top
     .bg
       %img{:src=>'/images/bg.jpg'}
     .container
@@ -39,7 +39,8 @@
         .span3
       .row
         .span3.side
-          %img.logo{:src=>'/images/logo.png', :width=>'160', :height=>'95'}
+          %a.jump{:href=>'#top'}  
+            %img.logo{:src=>'/images/logo.png', :width=>'160', :height=>'95'}
           %ul
             %li
               %a{:href => "#location"} Location
@@ -119,12 +120,12 @@
           .faqs.jump#faqs
             %h3 Frequently Asked Questions
             %p We haven't actually been asked any of these questions yet, and we hope these answers will keep it that way.
-
+            #tickets.jump
             %ol.tk-chaparral-pro
               %li
                 %h4 How many people are you letting through the gates?
                 %p We'll be letting 100 people into Greenville Grok. We want to keep things small and true. Also, Grok is repeatable. You have no excuse for not doing your own Grok, and if you ask nicely we'll even help you do it.
-              %li.jump#tickets
+              %li
                 %h4 When will tickets be available?
                 %p All, tickets will go on sale here <a href="http://grok.eventbrite.com">http://grok.eventbrite.com</a> on January 18 at 12pm for locals (GA, SC, NC, and TN) and then for everyone else on January 19 at 12pm for a total of 100 tickets.
               %li

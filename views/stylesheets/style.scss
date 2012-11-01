@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #4f4f4f;
   font-size: 14px;
-  line-height: 22px;  
+  line-height: 22px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 hr {
@@ -38,6 +38,22 @@ hr {
   }
 }
 
+#header {
+  position: relative;
+  text-align: center;
+  height: 480px;
+  background-image: url(/images/header.jpg);
+  background-position: 50% 50%;
+  width: 100%;
+  min-width: 940px;
+  @include transition(height);
+  @include transition-duration(0.3s);
+
+  @media only screen and ( min-width: 1280px ) {
+    background-size: cover;
+  }
+}
+
 .container {
   position: relative;
   width: 880px;
@@ -55,7 +71,6 @@ hr {
 }
 
 .side {
-  position: fixed;
   font-family: 'NeoRetroFill';
   font-size: 18px;
    text-align: center;
@@ -65,8 +80,7 @@ hr {
   }
   ul {
     margin-left: 0;
-    li {  
-      list-style-type: none;
+    li {       list-style-type: none;
       margin-bottom: 9px;
       padding-bottom: 6px;
       border-bottom: 1px solid #d5d5d5;
@@ -114,7 +128,7 @@ hr {
     margin-bottom: 40px;
   }
   h3 {
-    font-size: 28px;  
+    font-size: 28px;
   }
   h4 {
     color: #292929;

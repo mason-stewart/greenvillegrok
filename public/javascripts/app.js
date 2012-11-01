@@ -45,4 +45,27 @@ $(document).ready(function() {
     return [];
   }
 
+  // Parallax for 2013 omg
+  var scrollBannerBG = function() {
+
+    var bannerHeight, bannerVerticalPos, bgHeight, offset, width;
+    width = $(window).width();
+    // bannerHeight = 480;
+    // bgHeight = 570;
+    offset = ($(window).scrollTop() / $(document).height()) * 620;
+    bannerVerticalPos = ((480 - 570) / 2) + offset;
+    return $("#header").css({
+      'background-position': "50% " + bannerVerticalPos + "px"
+    });
+  };
+  $(window).bind("scroll", function(e) {
+    if ($(window).scrollTop() < 480) {
+      $('.side').css({'position':'static'});
+      return scrollBannerBG();
+    } else {
+      $('.side').css({'position':'fixed'});
+    }
+  });
+  return scrollBannerBG();
+
 });

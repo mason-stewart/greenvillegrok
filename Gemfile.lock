@@ -28,7 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass_twitter_bootstrap
+  compass_twitter_bootstrap (= 0.1.7)
   haml
   newrelic_rpm
   sass

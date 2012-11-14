@@ -41,16 +41,17 @@ hr {
 #header {
   position: relative;
   text-align: center;
-  height: 480px;
+  height: 460px;
   background-image: url(/images/header.jpg);
   background-position: 50% 50%;
   width: 100%;
   min-width: 940px;
   @include transition(height);
   @include transition-duration(0.3s);
+  background-size: cover;
 
-  @media only screen and ( min-width: 1280px ) {
-    background-size: cover;
+  img {
+    margin-top: 100px;
   }
 }
 
@@ -63,7 +64,7 @@ hr {
   margin-bottom: 60px;
   div {
     width: 130px;
-    border-top: 15px solid #482e28;
+    border-top: 15px solid #4f4f4f;
     &:first-child {
       width: 160px;
     }

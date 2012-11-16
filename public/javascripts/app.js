@@ -58,17 +58,15 @@ $(document).ready(function() {
       'background-position': "50% " + bannerVerticalPos + "px"
     });
   };
-
-  var throttledScroll = _.throttle(function(e) {
-    if ($(window).scrollTop() < 460) {
+  
+  $(window).bind("scroll", function(e) {
+    if ($(window).scrollTop() < 480) {
       $('.side').css({'position':'static'});
       // return scrollBannerBG();
     } else {
       $('.side').css({'position':'fixed'});
     }
-  }, 100);
-
-  $(window).bind("scroll", throttledScroll);
+  });
   // return scrollBannerBG();
 
 });

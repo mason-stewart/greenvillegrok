@@ -221,7 +221,9 @@ hr {
 }
 
 // mobile layout.
-@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+// Note from wmdmark: pixel-ratio query removed to avoid showing mobile to retina macs
+//@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-device-width: 480px) {
   .bg {
     display: none;
   }

@@ -46,8 +46,8 @@
             %ul
               %li
                 %a{:href => "#location"} Location
-              / %li
-              /   %a{:href => "#tickets"} Tickets
+              %li
+                %a{:href => "#tickets"} Tickets
               %li
                 %a{:href => "#sponsors"} Sponsors
               %li
@@ -83,14 +83,26 @@
               %h4 Grok is about Greenville
               %p We throw Grok here because we are totally nuts for this place. Beer flows in the streets and the buildings are made from Belgian chocolate – that might as well be true because that's how we feel about it. Once you see Greenville for yourself, we think you'll have second thoughts about leaving.
 
-          .jump#tickets
+          .jump
             %h3 Listen to what these bozos have to say about Grok
             %p Last year was an amazing endeavor into running a wild new kind of event. Check it out.
             %iframe{:allowFullScreen => "", :frameborder => "0", :height => "326", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/53628950?badge=0", :webkitAllowFullScreen => "", :width => "580"}
 
-          .jump#foobar
-            %h3 Sign up to get news about tickets
-            %p We'll be launching ticket information soon enough, but in the meantime you have two choices. You can either browse the best gifs on the <a href="http://gim.ie/k0p" target="_blank">webernets</a> or just <a href="http://eepurl.com/rM2pP" target="_blank">sign up for our newsletter</a>.
+          .jump#tickets{:style => "margin-top: 50px;"}
+            %h3 Tickets
+
+            %p On Monday, February 4th, we're launching a ticket lottery to get into Grok 2013. If selected, tickets will cost $150. 
+
+            %p
+              We're running a lottery system this year because we sold out last year and wanted to make this as fair as possible. We'll take your interest, your name, and payment information first.
+
+              %b You won't be charged unless you are accepted into the lottery.
+
+            %p We'll notify everyone on Monday, February 11th.
+
+            %p In the meantime you have two choices. You can either browse the best gifs on the <a href="http://gim.ie/k0p" target="_blank">webernets</a> or just <a href="http://eepurl.com/rM2pP" target="_blank">sign up for our newsletter</a>.
+
+            %br
 
           .jump#sponsors
             %h3 We only accept the best sponsors

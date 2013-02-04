@@ -66,10 +66,14 @@ hr {
 .top {
   margin-bottom: 60px;
   div {
-    width: 130px;
+    width: 140px;
     border-top: 15px solid #4f4f4f;
     &:first-child {
-      width: 160px;
+      width: 170px;
+    }
+
+    &.offset1 {
+      margin-left: 70px;
     }
   }
 }
@@ -79,6 +83,9 @@ hr {
   font-family: 'NeoRetroFill';
   font-size: 18px;
   text-align: center;
+  width: 170px;
+  margin-left: 15px;
+
   .logo {
     margin-bottom: 30px;
     margin-top: 3px;
@@ -148,7 +155,7 @@ hr {
     .span2 {
       background-color: #398fc0;
       height: 90px;
-      width: 130px;
+      width: 140px;
       padding: 30px 0;
       font-size: 30px;
       color: #FFF;
@@ -193,11 +200,16 @@ hr {
         font-weight: bolder;
       }
     }
-    .span10 p {
+
+    .span8, .span4, .span2 {
+      outline: 1px solid #d5d5d5;
+    }
+
+    .span8 p {
       font-size: 50px;
       line-height: 53px;
     }
-    .span5 p {
+    .span4 p {
       font-size: 32px;
       line-height: 36px;
     }
@@ -209,7 +221,7 @@ hr {
       width: 130px;
     }
     img {
-      outline: 1px solid #d5d5d5;
+
     }
   }
   .faqs {

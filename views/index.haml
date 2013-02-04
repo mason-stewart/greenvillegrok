@@ -11,11 +11,6 @@
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
-    / Le styles
-    :css
-      body {
-        padding-top: 60px;
-      }
     %link{:rel => "stylesheet", :href => "stylesheets/style.css", :media => "all"}
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", :type => "text/javascript"}
     %script{:src => "/javascripts/app.js", :type => "text/javascript"}
@@ -33,14 +28,14 @@
       %img{:src=>'/images/grok.png'}
     .container
       .row.top
-        .span3.first
-        .span3.offset1
-        .span3
-        .span3
-        .span3
+        .span2.first
+        .span2.offset1
+        .span2
+        .span2
+        .span2
       .row.row-fix
         .fix
-          .span3.side
+          .span2.side
             %a.jump{:href=>'#top'}
               %img.logo{:src=>'/images/logo.png', :width=>'160', :height=>'95'}
             %ul
@@ -57,7 +52,7 @@
 
 
 
-        .span10.offset4.main
+        .span8.offset3.main
           %img.mobile-logo{:src=>'/images/logo.mobile.png', :width=>'575', :height=>'322', :alt=>'Greenville Grok'}
           %h2 Grok is an invitation. Come to one of the best small cities in the nation. Talk, listen, eat and drink with world class people asking a ton of hard questions, digging into great issues, and making headway on some decent real-world solutions.
           .row.calendar.tk-chaparral-pro.jump#location
@@ -76,17 +71,17 @@
               %span 1
 
           .row
-            .span5
+            .span4
               %h4 What the fock is Grok?
               %p It's a three day event with sans the how-to sessions from industry leaders. We think a 10 minute session of hard questions from a new face is as good as a lock-tight answer from an old pro. We started Grok because we wanted to learn big, and go big.
-            .span5
+            .span4
               %h4 Grok is about Greenville
               %p We throw Grok here because we are totally nuts for this place. Beer flows in the streets and the buildings are made from Belgian chocolate – that might as well be true because that's how we feel about it. Once you see Greenville for yourself, we think you'll have second thoughts about leaving.
 
           .jump
             %h3 Listen to what these bozos have to say about Grok
             %p Last year was an amazing endeavor into running a wild new kind of event. Check it out.
-            %iframe{:allowFullScreen => "", :frameborder => "0", :height => "326", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/53628950?badge=0", :webkitAllowFullScreen => "", :width => "580"}
+            %iframe{:allowFullScreen => "", :frameborder => "0", :height => "348", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/53628950?badge=0", :webkitAllowFullScreen => "", :width => "620"}
 
           .jump#tickets{:style => "margin-top: 50px;"}
             %h3 Tickets
@@ -111,18 +106,18 @@
 
           .sponsors
             .row
-              .span10
+              .span8
                 %a{:href => 'http://www.mailchimp.com'}
                   %img{:src => '/images/sponsors/mailchimp.jpg'}
             .row
-              .span10
+              .span8
                 %a{:href => 'http://typekit.com/'}
                   %img{:src => '/images/sponsors/typekit.png'}
             .row
-              .span5
+              .span4
                 %a{:href => 'http://www.behance.com'}
                   %img{:src => '/images/sponsors/behance.png'}
-              .span5
+              .span4
                 %a{:href => 'http://www.twitter.com'}
                   %img{:src => '/images/sponsors/twitter.png'}
             .row

@@ -252,18 +252,20 @@ hr {
   }
   .container {
     width: 580px;
-    padding-left: 40px;
+    padding: 40px;
+    margin-bottom: 20px;
+
   }
   #header {
     display: none;
   }
+  h2.lottery {
+    font-size: 50px !important;
+    line-height: 60px;
+    text-align: center;
+  }
   .top {
-    .first {
-      display: none;
-    }
-    .offset1 {
-      margin-left: 0;
-    }
+    display: none;
   }
   .side {
     display: none;
